@@ -8,20 +8,20 @@ class NavBar extends Component {
     return (
       <Navbar
         className="navbar"
-        style={{ backgroundColor: "#1c6863" }}
+        style={{ backgroundColor: "#070101" }}
         expand="lg"
       >
-        <Navbar.Brand href="#home" className="text-light">
-          Naturo
+        <Navbar.Brand href="#home" className="text-primary">
+          NATURO <br />
+          ……LIVE NATURALLY
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          style={{ color: "#ffbb33" }}
+        />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto text-center">
-            <Nav.Link
-              href="#home"
-              className="text-light"
-              style={{ paddingRight: "20px" }}
-            >
+          <Nav className="ml-auto text-right">
+            <Nav.Link href="#home" style={{ paddingRight: "20px" }}>
               <img
                 src={profile}
                 alt=""
@@ -30,13 +30,12 @@ class NavBar extends Component {
             </Nav.Link>
             <Nav.Link
               href="#home"
-              className="text-light"
-              style={{ paddingRight: "20px" }}
+              style={{ paddingRight: "20px", color: "#ffbb33" }}
             >
               SignUp/Login
             </Nav.Link>
             <NavDropdown
-              title={<span className="text-light">Plans</span>}
+              title={<span className="text-warning">Plans</span>}
               id="basic-nav-dropdown"
             >
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -51,8 +50,7 @@ class NavBar extends Component {
             </NavDropdown>
             <Nav.Link
               href="#link"
-              className="text-light"
-              style={{ paddingRight: "20px" }}
+              style={{ paddingRight: "20px", color: "#ffbb33" }}
             >
               Contact Us
             </Nav.Link>
